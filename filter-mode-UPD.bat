@@ -1,4 +1,6 @@
 @echo off
+echo run this file as administrator or it will crash
+pause
 pktnom stop
 pktnom filter remove
 cls
