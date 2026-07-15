@@ -1,8 +1,6 @@
 @echo off
-echo run this file as administrator or it will crash
-pause
-pktnom stop
-pktnom filter remove
+pktmon stop
+sktmon filter remove
 cls
-pktnom filter add -t UPD 
-pktnom start --etw -m real-time
+pktmon filter add -t UDP
+pktmon start --etw -m real-time
